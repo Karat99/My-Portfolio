@@ -1,7 +1,7 @@
 body{
     background-color: #001A32;
-    margin: 80px;
-    margin-top: 30px;
+    margin: 100px;
+    margin-top: 50px;
 }
 
 /* Intro and Nav */
@@ -41,9 +41,65 @@ body{
     color: #ffffff;
     max-width: 650px;
 }
-.navBox{
-    float: right;
+#navBox{
+    display: grid;
+    height: 250px;
+    width: 300px;
+    background-color: #eb8062;
+    z-index: 100;
+    box-shadow:  47px 47px 15px -46px #994d37, 65px 65px 0px -30px #ebe950;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 30% 30% 40%;
+    grid-template-areas:
+        "logo logo about"
+        "logo logo resume"
+        "icon email email"
 }
-.smallY{
-    float: right;
+.logo{
+    height: 115px;
+    width: 100px;
+    margin-top: 35px;
+    margin-left: 35px;
+    grid-area: logo;
+}
+#navBox button{
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #001A32;
+    background-color: #eb8062;
+    border: none;
+    margin-left: 0px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+#about{
+    grid-area: about;
+}
+#resume{
+    grid-area: resume;
+}
+.icon{
+    height: 30px;
+    width: 40px;
+    margin-left: 25px;
+    margin-top: 35px;
+    grid-area: icon;
+}
+#navBox p{
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 37px;
+    color: #001A32;
+    grid-area: email;
+}
+/*#smallY{
+    height: 250px;
+    width: 300px;
+    background-color: #ebe950;
+    z-index: 0;
+    align-self: flex-end;
 }
