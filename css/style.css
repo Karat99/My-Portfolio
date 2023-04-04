@@ -1,45 +1,43 @@
 body{
     background-color: #001A32;
-    margin: 100px;
-    margin-top: 50px;
 }
 
 /* Intro and Nav */
 .intro{
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 400px;
     flex-wrap: wrap;
+    margin: 100px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 .intro h1{
     font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 150;
     color: #ffffff;
-    max-width: 650px;
+    max-width: 700px;
     height: 50px;
-    /*background-color: red;*/
     margin-bottom: 0;
 }
 .intro h2{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 100;
     color: #ffffff;
     margin: 0;
     margin-left: 100px;
     padding: 0%;
-    max-width: 650px;
+    max-width: 700px;
     height: 50px;
-    /*background-color: aqua;*/
-
 }
 .intro p{
     font-family: "Lato", Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 200;
     color: #ffffff;
-    max-width: 650px;
+    max-width: 680px;
 }
 #navBox{
     display: grid;
@@ -47,6 +45,9 @@ body{
     width: 300px;
     background-color: #eb8062;
     z-index: 100;
+    align-self: flex-end;
+    margin-top: 25px;
+    margin-right: 55px;
     box-shadow:  47px 47px 15px -46px #994d37, 65px 65px 0px -30px #ebe950;
     grid-template-columns: 25% 25% 50%;
     grid-template-rows: 30% 30% 40%;
@@ -96,10 +97,90 @@ body{
     color: #001A32;
     grid-area: email;
 }
-/*#smallY{
-    height: 250px;
-    width: 300px;
-    background-color: #ebe950;
-    z-index: 0;
+
+/*Case Studies*/
+.studies{
+    height: 1400px;
+    margin: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.studies div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 92%;
+    margin-right: 20px;
+    margin-bottom: 50px;
+}
+.studies h1{
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: #001A32;
+    max-width: 350px;
+    height: 50px;
+    margin: 35px;
+    margin-left: 50px;
+}
+.studies p{
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: 200;
+    color: #001A32;
+    max-width: 350px;
+    margin-left: 50px;
+}
+.studies img{
+    height: 200px;
+    width: 550px;
     align-self: flex-end;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+#study1{
+    margin-top: 20px;
+    background-color: #64b0ea;
+    float: right;
+    box-shadow: -81px 80px 15px -80px #657d8f, -120px 90px 0px -50px #eb8062;
+}
+#study2{
+    margin-top: 100px;
+    background-color: #ebe950;
+    float: left;
+    box-shadow: 81px 80px 15px -80px #8d8b1c, 120px 90px 0px -50px #64b0ea;
+}
+#study3{
+    margin-top: 100px;
+    background-color: #eb8062;
+    float: right;
+    box-shadow: -81px 80px 15px -80px #994d37, -120px 90px 0px -50px #ebe950;
+}
+footer{
+    background-color: #64b0ea;
+    width: 100%;
+    height: 80px;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footerLogo{
+    width: 50px;
+    height: 55px;
+    padding: 20px;
+}
+footer p{
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #001A32;
+    padding: 20px;
+}
+.socialIcon{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
 }
