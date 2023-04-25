@@ -1,5 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
-    background-color: #001A32;
+    background-color: #001A32 !important;
 }
 
 /* Intro and Nav */
@@ -47,28 +50,65 @@ body{
     align-self: flex-start;
     justify-content: flex-start;
 }
+#work{
+    grid-area: work;
+}
+#skills{
+    grid-area: skills;
+}
+#about{
+    grid-area: about;
+    margin-bottom: 12%;
+}
+.icon{
+    margin-top: 10px;
+    margin-left: 25%;
+}
+#email{
+    grid-area: emailIcon;
+}
+#file{
+    grid-area: file;
+}
+#resume{
+    font-family: "Lato", Arial, Helvetica, sans-serif !important;
+    text-align: left;
+    margin-top: 5% !important;
+    grid-area: resume;
+}
+#navBox p{
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: -8%;
+    color: #001A32;
+    grid-area: email;
+}
 #navBox{
     display: grid;
-    height: 300px;
+    height: 370px;
     width: 300px;
     background-color: #eb8062;
     z-index: 100;
     align-self: flex-end;
     justify-self: flex-end;
     box-shadow:  47px 47px 15px -46px #994d37, 65px 65px 0px -30px #ebe950;
-    grid-template-columns: 20% 20% 60%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
+        "logo logo work"
         "logo logo skills"
-        "logo logo backstory"
-        "logo logo resume"
-        "icon email email"
+        "logo logo about"
+        "emailIcon email email"
+        "file resume resume"
 }
 .logo{
-    height: 100px;
-    width: 87px;
-    margin-top: 65px;
-    margin-left: 25px;
+    height: 125px;
+    width: 115px;
+    margin-top: 32%;
+    margin-left: 20%;
     grid-area: logo;
 }
 #navBox .btn{
@@ -83,38 +123,27 @@ body{
     height: max-content;
     margin-top: 13%;
 }
-#skills{
-    grid-area: skills;
-}
-#backstory{
-    grid-area: backstory;
-}
-#resume{
-    grid-area: resume;
-}
-.icon{
-    height: 30px;
-    width: 40px;
-    margin-left: 40%;
-    margin-top: 19%;
-    grid-area: icon;
-}
-#navBox p{
-    font-family: "Lato", Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 5%;
-    color: #001A32;
-    grid-area: email;
-}
 
 /*Case Studies*/
 .studies{
     height: 1400px;
     margin: 100px;
-    margin-top: 0px;
+    margin-top: 25px;
     margin-bottom: 0px;
+}
+.studies h2{
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 150;
+    color: #ffffff;
+    max-width: 500px;
+}
+.studies hr{
+    width: 500px;
+    border-color: #ffffff;
+    opacity: 1;
+    border-style: solid;
+    margin-bottom: 25px;
 }
 .studies div{
     display: flex;
@@ -138,7 +167,7 @@ body{
 .studies p{
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-size: 19px;
-    font-weight: 200;
+    font-weight: 400;
     color: #001A32;
     max-width: 350px;
     margin-left: 50px;
@@ -162,12 +191,141 @@ body{
     float: left;
     box-shadow: 81px 80px 15px -80px #8d8b1c, 120px 90px 0px -50px #64b0ea;
 }
+#study2 h1{
+    margin-left: 10px;
+}
+#study2 p{
+    margin-left: 10px;
+}
 #study3{
     margin-top: 100px;
     background-color: #eb8062;
     float: right;
     box-shadow: -81px 80px 15px -80px #994d37, -120px 90px 0px -50px #ebe950;
 }
+
+/*Skills*/
+.skills{
+    height: fit-content;
+    margin: 100px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "digAccess webDev"
+        "uiInt uiInt";
+}
+.skills div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    height: 260px;
+    width: 450px;
+    margin: 10px;
+    margin-top: 0;
+    align-self: center;
+    justify-self: center;
+    border-radius: 5px;
+}
+.skillsHead h1{
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 150;
+    color: #ffffff;
+    max-width: 500px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.skillsHead hr{
+    width: 500px;
+    border-color: #ffffff;
+    opacity: 1;
+    border-style: solid;
+    margin-bottom: 25px;
+    margin-left: 100px;
+}
+.skills h2{
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: #001A32;
+    max-width: 350px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.skills li{
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: #001A32;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 7px;
+}
+#digAccess{
+    margin-top: 20px;
+    background-color: #64b0ea;
+    grid-area: digAccess;
+}
+#webDev{
+    margin-top: 20px;
+    background-color: #ebe950;
+    grid-area: webDev;
+}
+#uiInt{
+    margin-top: 0px;
+    background-color: #eb8062;
+    grid-area: uiInt;
+}
+
+/*Background Info*/
+.backstory{
+    height: fit-content;
+    margin: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.backstory h1{
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 150;
+    color: #ffffff;
+    max-width: 500px;
+}
+.backstory hr{
+    width: 500px;
+    border-color: #ffffff;
+    opacity: 1;
+    border-style: solid;
+    margin-bottom: 25px;
+}
+.backstory h2{
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 0%;
+    max-width: 700px;
+}
+.backstory p{
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/*Footer*/
 footer{
     background-color: #64b0ea;
     width: 100%;
@@ -181,17 +339,18 @@ footer{
 .footerLogo{
     width: 50px;
     height: 55px;
-    padding: 20px;
 }
 footer p{
     font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
     font-weight: 600;
     color: #001A32;
-    padding: 20px;
+    margin-top: auto;
+    margin-left: 2%;
+    margin-right: 4%;
 }
 .socialIcon{
     width: 30px;
     height: 30px;
-    padding: 20px;
+    margin-right: 2%;
 }

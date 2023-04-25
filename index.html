@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Kara Terry Portfolio</title>
 </head>
 <body>
@@ -22,22 +24,29 @@
     </p>
     <div id="navBox">
         <img class="logo" src="images/Logo.png">
+        <button class="btn" id="work">
+            WORK
+        </button>
         <button class="btn" id="skills">
             SKILLS
         </button>
-        <button class="btn" id="backstory">
-            BACKGROUND
+        <button class="btn" id="about">
+            ABOUT
         </button>
-        <button class="btn" id="resume">
-            RESUME
-        </button>
-        <img class="icon" src="images/Email Icon.png">
+        <img class="icon" id="email" src="images/Email Icon.png">
         <p>
             karajterry@gmail.com
         </p>
+        <img class="icon" id="file" src="images/File Icon.png">
+        <button class="btn" id="resume">
+            Download resume
+        </button>
     </div>
 </section>
 <section class="studies">
+    <h2 id="scroll1">My Work</h2>
+    <hr>
+    <br>
     <div id="study1">
         <h1>
             Site Navigation Redesign for Nonprofit Organization
@@ -48,13 +57,13 @@
         <img src="images/COSI.png">
     </div>
     <div id="study2">
+        <img src="images/Nellie.jpg">
         <h1>
             Case Study 2
         </h1>
         <p>
             Case study 2 description of work and changes. I would like to include independent projects here dealing with accessibility so, for now, my cat - Nellie.
         </p>
-        <img src="images/Nellie.jpg">
     </div>
     <div id="study3">
         <h1>
@@ -66,8 +75,67 @@
         <img src="images/Disney.jpg">
     </div>
 </section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<br>
+<section class="skillsHead">
+    <h1 id="scroll2">My Skills</h1>
+    <hr>
+</section>
+<section class="skills">
+    <div id="digAccess">
+        <h2>
+            Digital Accessibility
+        </h2>
+        <ul>
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+            <li>Skill 3</li>
+            <li>Skill 4</li>
+        </ul>
+    </div>
+    <div id="webDev">
+        <h2>
+            Web Development
+        </h2>
+        <ul>
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+            <li>Skill 3</li>
+            <li>Skill 4</li>
+        </ul>
+    </div>
+    <div id="uiInt">
+        <h2>
+            UI Interaction Design
+        </h2>
+        <ul>
+            <li>Skill 1</li>
+            <li>Skill 2</li>
+            <li>Skill 3</li>
+            <li>Skill 4</li>
+        </ul>
+    </div>
+</section>
+<section class="backstory">
+    <h1 id="scroll3">My Background</h1>
+    <hr>
+    <p>I started out my professional career by studying Biomedical Engineering at Ohio State University. I wanted to develop artificial organs to solve the shortage of those available for donation. In my first-year Fundamentals of Engineering class, though, we did an activity that changed the trajectory of my career, without me knowing it at the time. </p>
+    <h2>We did an activity that changed the trajectory of my career, without me knowing it at the time.</h2>
+    <p>This activity was adapting electronic toys to be compatible with larger buttons for use by children with low dexterity or mobility. Conditions like spina bifida or cerebral palsy can cause this. I adored this concept and when the group that ran the activity was hiring in my sophomore year, I eagerly applied. The Toy Adaptation Program within the Department of Engineering Education became my college job. We worked with physical therapists at Nationwide Children’s Hospital, companies like AEP, students at Ohio State and local high schools, and the parents of these children to teach them to use basic electrical circuitry to adapt a toy.</p>
+    <h2>I tried to learn as much as possible about disabilities and tailor my curriculum to eventually work in development of assisitve technology.</h2>
+    <p>As college went on, I tried to learn as much as possible about disabilities and tailor my curriculum to eventually work in development of assisitve technology. I even got a second job with a startup that was innovating on electronic braille displays in order to create compact and affordable multi-line displays.</p>
+    <br>
+    <p>After graduation, I struggled to find a job that was in the highly-specific field I was looking for. I ended up working in gene therapy research looking for treatments for muscular dystrophies. It was very interesting and I learned a lot, but I missed the aspect of helping disabled people where they are now, not just looking for a cure for them. </p>
+    <h2>I missed the aspect of helping disabled people where they are now, not just looking for a cure for them.</h2>
+    <p>Scouring the job market for something like this, I found digital accessibility. In applying to jobs in this field, I learned I had a gap in my knowledge. I did not know the programming languages of the internet. Though I had learned and loved coding in my engineering education, I did not learn HTML or CSS.</p>
+    <br>
+    <p>So, I enrolled in a UX/UI bootcamp and, in six months, learned everything I could about designing for the user and coding the pages in ideal ways. Now, I am building my portfolio as I strive to work digital accessibility. Thank you for taking the time to read my story and I hope that it has encouraged you to consider accessibility for your organization. If so, I would love to help and don’t hesitate to contact me.</p>
+</section>
+
+<script src="js/index.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </body>
+
 <footer>
     <img class="footerLogo" src="images/Logo.png">
     <p>
